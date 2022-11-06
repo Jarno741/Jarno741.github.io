@@ -1,11 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body>
-  <div class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+  <div id="myMapselector" class="mapselector">
+    <a href="javascript:void(0)" class="closeMapSelecterButton" onclick="closeMapselector()">&times;</a>
+    <button onclick="mapselection('Ascent')"><img src="misc/Ascent.png" alt="Ascent"></button>
+    <button onclick="mapselection('Bind')"><img src="misc/Bind.png" alt="Bind"> </button>
+    <button onclick="mapselection('Breeze')"><img src="misc/Breeze.png" alt="Breeze"> </button>
+    <button onclick="mapselection('Fracture')"><img src="misc/Fracture.png" alt="Fracture"></button>
+    <button onclick="mapselection('Haven')"><img src="misc/Haven.png" alt="Haven"></button>
+    <button onclick="mapselection('Icebox')"><img src="misc/Icebox.png" alt="Icebox"></button>
+    <button onclick="mapselection('Pearl')"><img src="misc/Pearl.png" alt="Pearl"></button>
+    <button onclick="mapselection('Split')"><img src="misc/Split.png" alt="Split"></button>
+  </div>
+  <div id="myAgentSelector" class="agentselector">
+    <img src="misc/Sova.jpg" alt="Sova">
   </div>
 
-  <!-- Page content -->
-  <div class="main"></div>
+  <div id="main">
+    <button id=myMapSelecterOpenButton class="mapselecteropenbutton" onclick="openMapselector()"><i
+        class="material-icons">map</i></button>
+    <h2>Collapsed Sidebar</h2>
+    <p id=content>Content...</p>
+  </div>
 </body>
+
+<script src="script.js"></script>
+
+<script></script>
+</body>
+
+</html>
